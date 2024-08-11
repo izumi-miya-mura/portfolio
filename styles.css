@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Fade-in effect for the whole page */
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+.header {
+    height: 80px;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: translateY(-100%);
+    animation: slideDown 1s forwards; /* Slide-down effect for header */
+}
+
+@keyframes slideDown {
+    to {
+        transform: translateY(0);
+    }
+}
+
+.inner-header {
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container h1 {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 120;
+    opacity: 0;
+    animation: fadeInText 1.5s forwards; /* Fade-in effect for text */
+}
+
+@keyframes fadeInText {
+    to {
+        opacity: 1;
+    }
+}
+
+.logo-container h1 span {
+    font-weight: 800;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav a {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    animation: fadeInNav 2s forwards; /* Fade-in effect for nav links */
+}
+
+@keyframes fadeInNav {
+    to {
+        opacity: 1;
+    }
+}
